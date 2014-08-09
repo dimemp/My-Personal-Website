@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Dimitris Dimosiaris</title>
+		<meta name="description" content="My web profile. Learn more thing about me, find how you can contact me and what interests me." />
+		<meta name="keywords" content="profile, social media profiles, interests, about, about me, student" />
+		<meta name="author" content="Dimitris Dimosiaris" />
+		<link rel="shortcut icon" href="images/favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link href='http://fonts.googleapis.com/css?family=Pacifico|Lato:300' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<!-- Button trigger modal -->
+		<div class="top-btn">
+            <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                <i class="fa fa-bookmark-o fa-2x"></i>
+            </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade bs-example-modal-sm" id="myModal"  role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+           <div class="modal-dialog modal-sm">
+               <div class="modal-content">
+                   <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><i id="top" class="fa  fa-lightbulb-o fa-lg"></i>My Interests</h4>
+                   </div>
+                   <div class="modal-body">
+                       <nav>
+			              <ul>
+				            <li><a href="#">Entrepreneurship</a></li>
+				            <li><a href="#">Psycology in Entrepreneurship</a></li>
+				            <li><a href="#">Engineering</a></li>
+				            <li><a href="#">Web-Mobile development</a></li>
+				            <li><a href="#">Reading books</a></li>
+			              </ul> 
+                       </nav>
+                   </div>
+               </div>
+           </div>
+        </div>
+		<div class="container">	
+		   <div class="personal">
+		   	   <div>
+		   	       <a class="header" href="#">
+		   	       	  <img class="defaultImage" src="images/myphoto.jpg" alt="logo" />
+                      <img class="hoverImage" src="images/happy.png" alt="logo"/>
+		   	       </a>
+		   	    </div>   
+		   	   <h1> Hi, there!</h1>
+		   	   <p>My name is Dimitris Dimosiaris and i am currently an undergraduate student at National Technical University of Athens. One thing you have to know about me: I love making awesome stuff :). Drop me a line if you feel the same.</p>
+		   </div>
+		   <hr>
+		   <div class="dropdown">
+		       <ul class="social">
+                  <li><a href="https://www.facebook.com/dimitris.dimos.77" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				  <li><a href="https://twitter.com/DimiDimos" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				  <li><a href="https://github.com/dimemp" target="_blank"><i class="fa fa-github"></i></a></li>
+				  <li><a href="skype:dimitris-dimos1?call"><i class="fa fa-skype"></i></a></li>
+				  <li><a href="mailto:dimitrisdimosiaris@gmail.com"><i class="fa fa-envelope"></i></a></li>
+               </ul>	
+          </div>
+		</div><!-- /container -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+              $(document).on({
+                mouseenter: function() {
+                   $('.hoverImage').show();
+                   $('.defaultImage').hide();
+                },
+                mouseleave: function() {
+                   $('.hoverImage').hide();
+                   $('.defaultImage').show();
+                } 
+              }, 'a.header');
+        </script>
+	</body>
+</html>
