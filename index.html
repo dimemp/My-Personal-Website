@@ -17,9 +17,9 @@
 		<!-- Button trigger modal -->
 		<div class="top-btn">
             <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
-                <i class="fa fa-bookmark-o fa-2x"></i>
+                <i class="fa  fa-navicon"></i>
             </button>
-        </div>
+        </div>  <!-- End button trigger modal -->
         <!-- Modal -->
         <div class="modal fade bs-example-modal-sm" id="myModal"  role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-sm">
@@ -30,31 +30,38 @@
                    </div>
                    <div class="modal-body">
                        <nav>
+                       	   <!-- Personal information inside modal -->
 			              <ul>
 				            <li><a href="#">Entrepreneurship</a></li>
 				            <li><a href="#">Psycology in Entrepreneurship</a></li>
 				            <li><a href="#">Engineering</a></li>
 				            <li><a href="#">Web-Mobile development</a></li>
 				            <li><a href="#">Reading books</a></li>
-			              </ul> 
+			              </ul> <!-- End of personal information inside modal -->
                        </nav>
                    </div>
                </div>
            </div>
-        </div>
+        </div>  <!-- End of modal -->
+
+        <!-- Container with the main information -->
 		<div class="container">	
 		   <div class="personal">
 		   	   <div>
+		   	   	   <!-- Photos -->
 		   	       <a class="header" href="#">
-		   	       	  <img class="defaultImage" src="images/myphoto.jpg" alt="logo" />
-                      <img class="hoverImage" src="images/happy.png" alt="logo"/>
-		   	       </a>
+		   	       	  <img class="defaultImage" src="images/myphoto.jpg" alt="my profile photo" />
+                      <img class="hoverImage" src="images/happy.png" alt="a big smile"/>
+		   	       </a> <!-- End of photos -->  
 		   	    </div>   
+		   	    <!-- Welcome title and basic about me -->
 		   	   <h1> Hi, there!</h1>
-		   	   <p>My name is Dimitris Dimosiaris and i am currently an undergraduate student at National Technical University of Athens. One thing you have to know about me: I love making awesome stuff :). Drop me a line if you feel the same.</p>
+		   	   <p>My name is Dimitris Dimosiaris and i am currently an undergraduate student at National Technical University of Athens studying Mechanical Engineering. One thing you have to know about me: I love making awesome stuff :). Drop me a line if you feel the same.</p>
+		   	   <!-- End of welcome title and basic about me -->  	   
 		   </div>
 		   <hr>
-		   <div class="dropdown">
+		   <!-- Social buttons-->
+		   <div class="social-btns">
 		       <ul class="social">
                   <li><a href="https://www.facebook.com/dimitris.dimos.77" target="_blank"><i class="fa fa-facebook"></i></a></li>
 				  <li><a href="https://twitter.com/DimiDimos" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -62,12 +69,16 @@
 				  <li><a href="skype:dimitris-dimos1?call"><i class="fa fa-skype"></i></a></li>
 				  <li><a href="mailto:dimitrisdimosiaris@gmail.com"><i class="fa fa-envelope"></i></a></li>
                </ul>	
-          </div>
-		</div><!-- /container -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          </div> <!-- End of social buttons-->
+		</div><!-- End of container -->
+
+        <!-- jQuery necessary for Bootstrap's JavaScript plugins -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+        <!-- Included compiled plugins, or included individual files -->
         <script src="js/bootstrap.min.js"></script>
+
+        <!-- Custom script for images animation -->
         <script>
               $(document).on({
                 mouseenter: function() {
@@ -79,6 +90,6 @@
                    $('.defaultImage').show();
                 } 
               }, 'a.header');
-        </script>
+        </script> <!-- End of custom script for images animation -->
 	</body>
 </html>

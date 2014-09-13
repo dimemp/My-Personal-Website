@@ -1,47 +1,54 @@
+/* Custom css that overrides bootstrap's css*/
+
+/* Beginning of custom css for the main informations*/
 @import url("fonts/font-awesome/css/font-awesome.min.css");
 
+/* Border at the top of page - customizable color*/
 html {
 	border-top: 3px solid #CE422C;
-	
 }
 
 body {
-	background: #FFFFFF;
+	background: #ffffff;
 	font-family: 'Lato', sans-serif;
 	margin-top: 0px;
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
-
+/* Welcome title - customizable color*/
 h1{
-   font-family: 'Pacifico', sans-serif;
-   margin-top: 25px;
-   margin-bottom: 0px;
-   color: #CE422C;
+  font-family: 'Pacifico', sans-serif;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  color: #CE422C;
 }
 
 .personal p {
-   margin: 30px 0 0 0;
-   line-height: 25px;
-   font-family: 'Lato', sans-serif;
+  margin: 30px 0 0 0;
+  line-height: 25px;
+  font-family: 'Lato', sans-serif;
 }
 
+/* Line between paragraph and social buttons - customizable color*/
 hr {
 	border-color: #CE422C;
 }
 
 .top-btn {	
   float: right;
-  margin: 30px 50px;
+  margin: 30px 50px 0 0;
   display: block;
 }
 
+/* Button that triggers modal - customizable color*/
 .btn {
 	width: 50px;
 	height: 50px;
-	border: 2px solid #CE422C;
+	border: none;
 	text-align: center;
 	color: #CE422C;
+  font-size: 40px;
+  padding-top: 2px;
 }
 
 .btn i {
@@ -49,84 +56,74 @@ hr {
 	margin-right: 0px;
 }
 
-.btn:hover {	
-  background: #CE422C;
-  color: #FFFFFF;
-  border: 2px solid #CE422C;
-}
-
+/* Other functions of button - customizable color*/
 .btn-default:active,
 .btn-default.active,
-.btn-default:focus {
-  background: #CE422C;
-  color: #FFFFFF;
-  border: 2px solid #CE422C;
+.btn-default:focus,
+.btn:hover,
+.btn:active {
+  background: #FFFFFF;
+  color: #CE422C;
+  border: none;
 }
-
 
 .container {
 	text-align: center;
-    width: 450px;
-    margin: 0px auto;
-    font-size: 19px;
+  width: 450px;
+  margin: 0px auto;
+  font-size: 19px;
 }
 
 .personal {
 	width: 100%;
 }
 
-.dropdown {
-	width: 100%;
-}
-
+/* Images style - customizable color*/
 .defaultImage,
 .hoverImage {
-    border: 2px solid #CE422C;
+  border: 2px solid #CE422C;
 	margin: 70px 0px 0px;
-    width: 170px;
-    height: 170px;
-    -moz-border-radius: 100%; 
-    -webkit-border-radius: 100%; 
-    border-radius: 100%;
+  width: 170px;
+  height: 170px;
+  -moz-border-radius: 100%; 
+  -webkit-border-radius: 100%; 
+  border-radius: 100%;
 }
 
+/* Second Image style - change if you wish opacity*/
 .hoverImage{
-   display: none;
-   opacity: 0.7;
+  display: none;
+  opacity: 0.7;
+}
+
+.social-btns {
+  width: 100%;
 }
 
 .social {
-   margin: 24px 0;
-   padding: 0;
-   font-size: 30px;
+  margin: 24px 0;
+  padding: 0;
+  font-size: 30px;
 }
 
 .social li {
-   display: inline-block;
-   margin: 0 0px;
-   padding: 0;
+  display: inline-block;
+  margin: 0 0px;
+  padding: 0;
 }
 
+/* Social-buttons color - customizable color*/
 .social li a { 
 	color: #CE422C; 
 	opacity: 0.5;
 	filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
+/* Passing over the social-buttons - customizable color*/
 .social li a:hover { 
 	color: #CE422C; 
 	opacity: 1;
 	filter: alpha(opacity=100); /* For IE8 and earlier */
-}
-
-#down-triangle {
-	float: right;
-	width: 0; 
- 	height: 0;
- 	margin-top: 10px;
- 	border-top: 10px solid #CE422C;
-    border-left: 10px solid transparent; 
-    border-right: 10px solid transparent; 
 }
 
 i {
@@ -134,21 +131,22 @@ i {
 	margin-right: 30px;
 }
 
-#top {
-	color: #CE422C;
-}
+/* Modal list of contents*/
 
-/* Modal list */
+/* Modals title image - customizable color*/
+#top {
+  color: #CE422C;
+}
 
 nav ul li:hover > ul {
 	display: block;
 }
 
+/* Modals title bottom-border - customizable color*/
 nav ul li {
 	border-bottom: 3px solid #CE422C; 
 }
 	
-
 nav ul li a {
 	display: block; 
 	padding: 10px 10px;
@@ -160,8 +158,8 @@ nav ul {
 	border-radius: 0px; 
 	padding: 0;
 	top: 100%;
-    list-style-type: none;
-    font-size: 18.4px;
+  list-style-type: none;
+  font-size: 18.4px;
 }
 
 nav ul li {
@@ -171,7 +169,7 @@ nav ul li {
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a { 
@@ -179,25 +177,33 @@ a {
 }
 
 a:visited {
-    text-decoration:  none;
+  text-decoration:  none;
 }
 
+/* Passing over contents - customizable color*/
 nav ul li a:hover {
-	background: #CE422C;
-	color: #fff;
+	background: rgba(206, 66, 44, 0.86);
+	color: #ffffff;
 }	
 
-/* Modal css */
+/* Modal style */
+
+.modal-dialog {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}  
 
 .modal-open .modal,.btn:focus{
-    outline:  none!important;
+  outline:  none!important;
 }
 
 .modal-body {
-	padding: 0 10px 0 10px;
-    max-height:  500px;
-    overflow:  auto;
-    margin-bottom: 5px;
+	padding: 0 0 0 10px;
+  max-height:  500px;
+  overflow:  auto;
+  margin-bottom: 5px;
+  max-width: 280px;
 }
 
 .modal-content {
@@ -213,6 +219,7 @@ nav ul li a:hover {
   background-clip: padding-box;
   outline: 0;
 }
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -223,19 +230,102 @@ nav ul li a:hover {
   background-color: #000000;
 }
 
+/* Modals x for close color - customizable color*/
 .close {
 	color: #CE422C;
 	opacity: 1;
 }
 
+/* Modals passing over x for close color - customizable color*/
 .close:hover {
 	color: #CE422C;
 	opacity: 1;
 }
 
+/* Modals title border-bottom - customizable color*/
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #CE422C;
   min-height: 16.42857143px;
 }
 
+/* Smaller screens style */
+
+@media screen and (max-width: 600px) {
+
+.top-btn {  
+  margin: 15px 15px 0 0;
+}
+
+.personal p {
+  margin: 15px 0 0 0;
+  line-height: 22px;
+}
+
+h1 {
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.container {
+  width: 270px;
+  font-size: 17px;
+  padding: 0 0 0 0;
+}
+
+.defaultImage,
+.hoverImage {
+  margin: 35px 0 0 0;
+  width: 130px;
+  height: 130px;
+}
+
+.social {
+  margin: 12px 0;
+  font-size: 26px;
+}
+
+i {
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  padding: 0 0 0 0;
+}
+
+hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+}
+
+@media screen and (max-width: 330px) {
+
+.defaultImage,
+.hoverImage {
+  margin: 35px 0px 0px 55px;
+}
+
+}
+
+@media screen and (max-width: 340px) {
+
+.defaultImage,
+.hoverImage {
+  margin: 35px 0px 0px 30px;
+}
+
+}
+
+@media screen and (max-width: 288px) {
+
+.modal-body {
+  padding: 0 10px 0 10px;
+}
+
+}
